@@ -1,6 +1,6 @@
-package wh;
+package part1;
 
-public class part5 {
+public class Task5 {
     public static int result() {
         int x = 5;
         int y = 9;

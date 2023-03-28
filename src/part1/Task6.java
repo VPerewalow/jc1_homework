@@ -1,6 +1,6 @@
-package wh;
+package part1;
 
-public class part6 {
+public class Task6 {
     public static void main(String[] args) {
         int s = 356245632;
         int sec = s % 60;

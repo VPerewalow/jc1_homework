@@ -1,6 +1,6 @@
-package wh;
+package part1;
 
-public class part4 {
+public class Task4 {
     public static void main(String[] args) {
         byte b = 0x55;
         short s = 0x55ff;
