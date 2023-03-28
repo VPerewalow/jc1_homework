@@ -17,3 +17,4 @@ public class BitwiseExample {
         System.out.println(Integer.toBinaryString(i1 >>> 1)); //0110->0011
     }
 }
+

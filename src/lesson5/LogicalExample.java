@@ -9,10 +9,10 @@ public class LogicalExample {
         boolean res2 = i1 != 0 || i2 > 0;
         System.out.println(res2);
 
-        boolean res3 = i1 == 0 | compare (i2, 0);
+        boolean res3 = i1 == 0 | compare(i2, 0);
         System.out.println(res3);
 
-        boolean res4 = i1 == 0 || compare (i2, 0);
+        boolean res4 = i1 == 0 || compare(i2, 0);
         System.out.println(res4);
 
 
@@ -23,4 +23,3 @@ public class LogicalExample {
         return a > b;
     }
 }
-
