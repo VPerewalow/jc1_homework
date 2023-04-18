@@ -13,12 +13,17 @@ public class MainAnnotation {
         final HelloWorldAnnotation annotation = myAnnotatedClass.getClass().getAnnotation(HelloWorldAnnotation.class);
         System.out.println(annotation.message());
         System.out.println(annotation.count());
+        for (int i = 0; i < annotation.count(); i++) {
+            System.out.println(annotation.message());
+        }
     }
 }
 
-@HelloWorldAnnotation(message = "Hello World", count = 2)
+@HelloWorldAnnotation(message = "Hello World", count = 5)
 class MyAnnotatedClass {
+}
 
-    public void doSomething() {
-    }
+class Letter {
+    private String message;  // Letter massage
+    private int count; // Letter count
 }
