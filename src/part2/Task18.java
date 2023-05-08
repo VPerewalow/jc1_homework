@@ -3,14 +3,18 @@ package part2;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Task18 {
     public static void main(String[] args) {
         Random random = new Random();
-        for (int i = 0; i < 10; i++) {
+        String numberString = Integer.toString(random.nextInt());
+        int length = numberString.length();
+        StringBuilder builder = new StringBuilder(numberString);
+        for (int i = length - 3; i > 0; i -= 3) {
+            builder.insert(i, ' ');
         }
-        System.out.println(String.valueOf(random.nextInt()).replaceAll("(?=(\\d{3})+$)", " "));
+        String formattedNumber = builder.toString();
+        System.out.println(formattedNumber);
     }
 }
 

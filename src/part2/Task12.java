@@ -6,23 +6,31 @@ public class Task12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите день недели:");
-        int x = sc.nextInt();
-        if (x == 1) {
-            System.out.println("Понедельник. Работа.");
-        } else if (x == 2) {
-            System.out.println("Вторник. Встреча с друзьями.");
-        } else if (x == 3) {
-            System.out.println("Среда. Поездка к родителям.");
-        } else if (x == 4) {
-            System.out.println("Четверг. Тренажёрный зал.");
-        } else if (x == 5) {
-            System.out.println("Пятница. Совещание.");
-        } else if (x == 6) {
-            System.out.println("Суббота. Ночной клуб.");
-        } else if (x == 7) {
-            System.out.println("Воскресенье. Отдых.");
-        } else {
-            System.out.println("Некорректный ввод");
+        int dayOfWeek = sc.nextInt();
+        switch (dayOfWeek) {
+            case 1:
+                System.out.println("Понедельник: курсы");
+                break;
+            case 2:
+                System.out.println("Вторник: футзал");
+                break;
+            case 3:
+                System.out.println("Среда: ремонт машины");
+                break;
+            case 4:
+                System.out.println("Четверг: курсы");
+                break;
+            case 5:
+                System.out.println("Пятница: ночной клуб");
+                break;
+            case 6:
+                System.out.println("Отдых после пятницы");
+                break;
+            case 7:
+                System.out.println("Выходной день");
+                break;
+            default:
+                System.out.println("Некорректный номер дня недели");
         }
     }
 }

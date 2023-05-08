@@ -7,6 +7,8 @@ import lesson4.Car;
 
 public class Parking {
 
+    public static final int MAX_PARKING_SIZE = 20;
+
     Map<ParkingTicket, String> parkingTickets = new HashMap<>();
 
 
@@ -29,8 +31,12 @@ public class Parking {
 
     public ParkingTicket park(Car car) {
         if (car == null) {
-            return null;
+            throw new IllegalArgumentException("Car cannot be null");
         }
+        if (cars.size() >= MAX_PARKING_SIZE){
+            throw new IllegalStateException("No parking plases");
+        }
+
         ParkingTicket ticket = new ParkingTicket();
         parkingTickets.put(ticket, car.getPlateNumber());
         this.cars.add(car);

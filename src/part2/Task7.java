@@ -1,9 +1,17 @@
 package part2;
 
+
 public class Task7 {
     public static void main(String[] args) {
-        int x = 537;
-        boolean exam = x % 10 == 7;
-        System.out.println(exam);
+        System.out.println(getBoolean());
+    }
+
+    private static boolean getBoolean() {
+        int number = -235627;
+        if (number % 10 == 7 || number % 10 == -7) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -2,16 +2,22 @@ package part2;
 
 public class Task16 {
     public static void main(String[] args) {
-        boolean y = true;
-        for (int num = 50; num <= 70; num++) {
-            y = true;
-            if (num == 1) y = false;
-            for (int divisor = 2; divisor < num && y; divisor++) {
-                if (num % divisor == 0) {
-                    y = false;
+        int count = 0;
+        for (int i = 50; i <= 70; i++) {
+            boolean isPrime = true;
+            for (int j = 2; j <= i / 2; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
                 }
             }
-            if (y) System.out.println("Простое число: " + num);
+            if (isPrime) {
+                count++;
+                if (count == 2) {
+                    System.out.println("Второе простое число: " + i);
+                    break;
+                }
+            }
         }
     }
 }
