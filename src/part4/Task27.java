@@ -1,13 +1,15 @@
 package part4;
 
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Task27 {
     public static void main(String[] args) {
-        String str = "введите с клавиатуры строку. найти в стоке не только запятые, но и другие знаки препинания.";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите текст: ");
         Pattern pattern = Pattern.compile("\\p{Punct}");
-        Matcher matcher = pattern.matcher(str);
+        Matcher matcher = pattern.matcher(scanner.nextLine());
         int count = 0;
         while (matcher.find()) {
             count++;
