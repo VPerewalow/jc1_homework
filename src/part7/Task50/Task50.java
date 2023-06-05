@@ -1,4 +1,4 @@
-package part7;
+package part7.Task50;
 import java.io.*;
 import java.util.Random;
 
