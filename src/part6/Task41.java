@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class Task41 {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
 
         for (int i = 0; i < 20; i++) {
             int mark = (int) (Math.random() * 10);

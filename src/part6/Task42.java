@@ -1,11 +1,12 @@
 package part6;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class Task42 {
     public static void main(String[] args) {
         int value = 10;
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         for (int i = 0; i < value; i++) {
             int mark = 1 + (int) (Math.random() * 10);
             list.add(mark);

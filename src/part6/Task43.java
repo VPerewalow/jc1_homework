@@ -10,7 +10,7 @@ public class Task43 {
         Map<String, Integer> myText = new HashMap<>();
         List<String> text = new ArrayList<>();
         text.add(name);
-        String[] words = name.split(" ");
+        String[] words = name.split("[^a-zA-Zа-яА-Я]+");
 
         for (String word : words) {
             Integer repeat = myText.get(word);
